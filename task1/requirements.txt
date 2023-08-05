@@ -3,5 +3,5 @@ numpy
 pandas
 streamlit
 scikit-learn
-pytorch==2.0.1
+pytorch==1.0.2
 plotly
