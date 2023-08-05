@@ -164,7 +164,7 @@ else:
     st.write("Invalid Basis Function Selection.")
 
 learning_rate = st.sidebar.slider("Learning Rate", min_value=0.0001, max_value=1.0, value=0.01)
-epochs = st.sidebar.slider("Number of Epochs", min_value=10, max_value=5000, value=10)
+epochs = st.sidebar.slider("Number of Epochs", min_value=100, max_value=5000, value=100)
 dropout_prob = st.sidebar.slider("Drop-out Probability", min_value=0.1, max_value=0.8, value=0.0)
 
 if enable_MC_dropout == "Enabled":
