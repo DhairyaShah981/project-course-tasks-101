@@ -79,7 +79,10 @@ def make_predictions(model, x_val, is_MC_dropout, n_samples):
         is_MC_dropout (str): Whether MC Dropout is enabled or not
         n_samples (int): Number of samples for MC Dropout
     
-    Returns: None
+    Returns: 
+        if MC dropout is Disabled: model output without dropout
+        if MC dropout is Enabled: Average output of the predictions with droput
+    
     '''
     if is_MC_dropout == "Disabled":
         model.eval()        # this disables dropout
